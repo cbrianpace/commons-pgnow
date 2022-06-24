@@ -37,6 +37,6 @@ insert into gatherings_agenda (id, starttime, topic) values
 grant select,insert on public.gatherings to pgnow;
 grant select on public.gatherings_agenda to pgnow;
 
-create table public.feedback (id serial, feedbackdt timestamp default current_timestamp, email varchar(200), feedback text);
+create table public.feedback (id serial, feedbackdt timestamp default current_timestamp, email varchar(200), feedback text, stars int);
 grant select,insert,update,delete on public.feedback to pgnow;
 grant select, usage on all sequences in schema public to pgnow;
