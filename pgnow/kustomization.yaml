@@ -1,0 +1,19 @@
+namespace: crunchy
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+secretGenerator:
+- name: pgo-s3-creds
+  files:
+  - s3.conf
+
+configMapGenerator:
+  - name: pgnow-init-sql
+    files:
+      - pgnow_init.sql
+
+resources:
+- postgres.yaml
+- postgrest.yaml
+- service-postgrest.yaml

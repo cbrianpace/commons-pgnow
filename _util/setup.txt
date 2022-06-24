@@ -1,0 +1,9 @@
+oc create namespace pgmonitor
+oc create namespace postgres-operator
+oc create namespace crunchy
+
+oc apply --server-side -k install/default
+oc apply -k monitoring -n pgmonitor
+
+Grafana:
+http://pgmonitor-pgmonitor.apps.ocp4-bpace.ocpdemos.crunchydata.com

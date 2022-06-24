@@ -1,0 +1,3 @@
+rclone ls pgnow:pgbackrest-pgnow-repo/ --no-check-certificate
+
+rclone delete pgnow:pgbackrest-pgnow-repo/pgbackrest --no-check-certificate
