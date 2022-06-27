@@ -7,3 +7,12 @@ oc apply -k monitoring -n pgmonitor
 
 Grafana:
 http://pgmonitor-pgmonitor.apps.ocp4-bpace.ocpdemos.crunchydata.com
+
+
+
+Reset:
+-   Remove pgnow deployment
+    oc delete -k pgnow -n crunchy
+
+-   Remove Operator from OperatorHub
+

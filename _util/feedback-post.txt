@@ -1,0 +1,5 @@
+curl -X POST http://crunchydata-crunchy.apps.ocp4-bpace.ocpdemos.crunchydata.com/feedback \
+     -H "Content-Type: application/json" \
+     -d '{"email": "brian.pace@crunchydata.com", "feedback": "Really enjoyed meeting everyone", "stars": 5}'
+
+watch -n 5 curl --silent http://crunchydata-crunchy.apps.ocp4-bpace.ocpdemos.crunchydata.com/feedback?order=feedbackdt.desc&limit=20

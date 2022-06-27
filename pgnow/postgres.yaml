@@ -42,11 +42,11 @@ spec:
             resources:
               requests:
                 storage: 10Gi
-      - name: repo2
-        s3:
-          bucket: "pgbackrest-pgnow-repo"
-          endpoint: "s3.openshift-storage.svc:443"
-          region: "east"
+      # - name: repo2
+      #   s3:
+      #     bucket: "pgbackrest-pgnow-repo"
+      #     endpoint: "s3.openshift-storage.svc:443"
+      #     region: "east"
           
 
   monitoring:
