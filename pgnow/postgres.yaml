@@ -15,10 +15,7 @@ spec:
   instances:
     - name: 'pgc'
       replicas: 2
-      resources:
-        limits:
-          cpu: 1.0
-          memory: 1Gi
+      resources: {}
       dataVolumeClaimSpec:
         accessModes:
         - "ReadWriteOnce"
@@ -29,12 +26,11 @@ spec:
   backups:
     pgbackrest:
       image: registry.developers.crunchydata.com/crunchydata/crunchy-pgbackrest:ubi8-2.38-0
-      configuration:
-        - secret:
-            name: pgo-s3-creds
-
       repos:
       - name: repo1
+        schedules:
+          full: "0 1 * * 0"
+          incremental: "0 1 * * 1-6"
         volume:
           volumeClaimSpec:
             accessModes:
@@ -42,12 +38,6 @@ spec:
             resources:
               requests:
                 storage: 10Gi
-      # - name: repo2
-      #   s3:
-      #     bucket: "pgbackrest-pgnow-repo"
-      #     endpoint: "s3.openshift-storage.svc:443"
-      #     region: "east"
-          
 
   monitoring:
     pgmonitor:

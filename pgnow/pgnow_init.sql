@@ -17,22 +17,22 @@ insert into gatherings (id, slug, eventdt, title) values
 create table public.gatherings_agenda (id int, starttime timestamp, topic varchar(100) );
 
 insert into gatherings_agenda (id, starttime, topic) values
-(8, '2022-07-06 09:00', 'Registration Opens'),
-(8, '2022-07-06 09:30', 'Keynote: OpenShift Everywhere: Red Hat''s Hybrid Cloud Vision'),
-(8, '2022-07-06 10:00', 'OpenShift Release Update and Road Map'),
-(8, '2022-07-06 10:30', 'Sponsor''s Lighting Talk: Crunchy Data'),
-(8, '2022-07-06 10:40', 'Coffee Break - Trillo in Lightning Talk Corner'),
-(8, '2022-07-06 11:00', 'The Rise and Fall…and Rise Again of Fabric'),
-(8, '2022-07-06 11:35', 'Building Kubernetes Operators in the Wild - Managing the Lifecycle of Your Application on the Cloud'),
+(1, '2022-07-06 09:00', 'Registration Opens'),
+(2, '2022-07-06 09:30', 'Keynote: OpenShift Everywhere: Red Hat''s Hybrid Cloud Vision'),
+(3, '2022-07-06 10:00', 'OpenShift Release Update and Road Map'),
+(4, '2022-07-06 10:30', 'Sponsor''s Lighting Talk: Crunchy Data'),
+(5, '2022-07-06 10:40', 'Coffee Break - Trillo in Lightning Talk Corner'),
+(6, '2022-07-06 11:00', 'The Rise and Fall…and Rise Again of Fabric'),
+(7, '2022-07-06 11:35', 'Building Kubernetes Operators in the Wild - Managing the Lifecycle of Your Application on the Cloud'),
 (8, '2022-07-06 12:00', 'Lunch Break - TBD in Lightning Talk Corner'),
-(8, '2022-07-06 12:50', 'Case Study: UK Health Security Agency'),
-(8, '2022-07-06 13:15', 'Next Generation AI/ML Workloads on OpenShift using knative and Infinispan'),
-(8, '2022-07-06 13:40', 'OKD: OpenShift''s Open Source Road Map'),
-(8, '2022-07-06 14:00', 'Coffee Break - Cockroach Labs in Lightning Talk Corner'),
-(8, '2022-07-06 14:20', 'GitOps Automation on OpenShift'),
-(8, '2022-07-06 14:50', 'Taking OpenShift to the Edge with MicroShift'),
-(8, '2022-07-06 15:20', 'AMA Session: Live Q/A with Guest Speakers, Red Hat Engineers & Project Leads'),
-(8, '2022-07-06 15:35', 'Reception with Couchbase in Lightning Talk Corner');
+(9, '2022-07-06 12:50', 'Case Study: UK Health Security Agency'),
+(10, '2022-07-06 13:15', 'Next Generation AI/ML Workloads on OpenShift using knative and Infinispan'),
+(11, '2022-07-06 13:40', 'OKD: OpenShift''s Open Source Road Map'),
+(12, '2022-07-06 14:00', 'Coffee Break - Cockroach Labs in Lightning Talk Corner'),
+(13, '2022-07-06 14:20', 'GitOps Automation on OpenShift'),
+(14, '2022-07-06 14:50', 'Taking OpenShift to the Edge with MicroShift'),
+(15, '2022-07-06 15:20', 'AMA Session: Live Q/A with Guest Speakers, Red Hat Engineers & Project Leads'),
+(16, '2022-07-06 15:35', 'Reception with Couchbase in Lightning Talk Corner');
 
 grant select,insert on public.gatherings to pgnow;
 grant select on public.gatherings_agenda to pgnow;

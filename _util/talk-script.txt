@@ -1,0 +1,33 @@
+## Who is Crunchy Data?
+Crunchy Data is the Red Hat of PostgreSQL.  In essence, our business is Postgres and committed to Open Source software.  At Crunchy, we are one of the leading contributors to Postgres.  Also,  we maintain several key components in like pgMontior, PostGIS and pgBackRest.
+
+## Red Hat Partnership
+We are very proud of our long time partnership with Red Hat.  From one of the first 3 Operators ever certified to the goto provider for Postgres behind flagship products like Ansible Automation Platform and Quay.
+
+## Postgres in OpenShift
+The Operator enables database as a service and modernization of Postgres in OpenShift.  It completely automates the lifecycle of the Postgres environment.
+
+I thought all week about how I can maximize our time together.  My goal, give you something you could walk away with and deploy over the coffee break.  So, I need your help.  Will you be the load and backend testers?
+
+## Postgres + REST API < 10 Minutes
+First step, get your phones out and scan the QR code.  Open the resulting URL in the browser.  At this point you get an error as nothing exists in our cluster.  Keep that browser endpoint handy as I work through our to-do list which consist of:
+-   Deploying the Operator (will do it via the OperatorHub)
+-   Create a production ready HA Postgres cluster.
+-   Deploy PostgREST to provide the REST API
+-   Last, deploy a standard database schema
+
+## Deploy
+-
+
+## Testing
+System is now up and running.  From 0 to a complete data layer in a few minutes. 
+The two QR codes are now working.  The code on the left will show you the last 20 feedback in the feedback table.  Want to provide feedback, use the CURL command here at the bottom.
+
+The code on the right, is the agenda for today.  Responses are coming back in JSON format ready for your UI.
+
+With the data layer taken care of,  you can focus on application and business development objectives.
+
+## Get Started
+Want to deploy in your environment?  Here are two easy ways to get started.  We would be honored if you stopped by our booth to say hello and to answer any questions you may have.
+
+Thank you!
